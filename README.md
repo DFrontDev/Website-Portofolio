@@ -1,4 +1,4 @@
-# DFrontDev | Website Portfolio Pribadi
+# DFrontDev | Website Portfolio
 
 Website ini adalah ruang untuk memamerkan berbagai karya desain web, sosial media, serta proyek-proyek yang pernah aku kerjakan. Desain website ini dibuat dengan menonjolkan kesederhanaan, estetika yang menarik, serta performa yang optimal.
 
