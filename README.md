@@ -1,20 +1,23 @@
-# DFrontDev | Portofolio-Website
+# DFrontDev | Website Portfolio Pribadi
 
-Ini adalah website portofolio pribadi yang saya buat untuk menampilkan karya desain web, sosial media, dan beberapa proyek lainnya. Website ini dirancang dengan fokus pada kesederhanaan, tampilan yang menarik, serta fungsionalitas yang optimal.
+Website ini adalah ruang untuk memamerkan berbagai karya desain web, sosial media, serta proyek-proyek yang pernah aku kerjakan. Desain website ini dibuat dengan menonjolkan kesederhanaan, estetika yang menarik, serta performa yang optimal.
 
-## Fitur
-- Desain responsif untuk perangkat mobile dan desktop
-- Tampilan clean dan minimalis
-- Showcase berbagai proyek desain dan pengembangan web
+# Fitur Utama
 
-## Teknologi yang digunakan
-- HTML, CSS, dan JavaScript
-- Framework: Bootstrap
+Desain responsif, nyaman diakses di mobile dan desktop
+Tampilan yang simpel dan elegan
+Menampilkan portofolio proyek desain dan pengembangan web
+Teknologi:
 
-## Cara Mengakses
-Kamu bisa mengakses website ini melalui Link Pages di sini: https://personal-portofolio-website-dfrontdev.vercel.app/
+# Dibangun dengan 
 
-## Kontak
-Jika ingin berdiskusi atau berkolaborasi, bisa hubungi saya melalui dimanfrontdeveloper@gmail.com, Terima kasih!
+HTML, CSS, dan JavaScript
+Menggunakan framework Bootstrap
 
+# Cara Mengunjungi
 
+Akses website melalui tautan berikut: URL Website
+
+# Kontak
+
+Jika tertarik berdiskusi atau berkolaborasi, bisa menghubungi aku di: dimanfrontdeveloper@gmail.com. Terima kasih banyak!
