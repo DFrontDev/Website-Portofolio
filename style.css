@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Audiowide&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Poppins';
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --color-background:#15172D;
+  --color-second-background:#15172de9;
+  --color-ungu:#7419f7;
+  --color-pink:#ff56ff;
+  --color-black:#13072e;
+  --color-blue-black:#3f2182;
+}
+
+body{
+  background: var(--color-background);
+}
+
+/* style info */
+.info{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .5s;
+  z-index: 5;
+}
+
+/* Warna background navbar ketika di-scroll */
+.scrolled {
+    background-color: #15172D;
+    transition: .5s;
+}
+
+/* style untuk navbar */
+.navbar-brand{
+  font-family: 'Audiowide';
+}
+
+.nav-item{
+  margin-right: 15px;
+}
+
+.nav-item a:hover{
+  color: var(--color-pink);
+}
+
+.navbar-toggler:hover{
+  color: transparent;
+}
+
+.menu{
+  display: none;
+}
+
+.logo-2 h1{
+  font-family: 'Audiowide';
+}
+
+#navbarOpen{
+  display: none;
+}
+
+/* style button linear-gradient */
+.btn-github{
+  padding: 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1000px;
+  background: var(--color-background);
+  color: white;
+  position: relative;
+  transition: .3s;
+}
+
+.btn-github::after{
+  content: '';
+  position: absolute;
+  width: 102%;
+  height: 107%;
+  border-radius: 1000px;
+  background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn-github:hover{
+  z-index: 1;
+  box-shadow: 40px 0 100px rgba(116,25,247,1), -40px 0 100px rgba(255,86,255,1);
+  transition: .3s;
+}
+
+.btn-link{
+  padding: 8px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1000px;
+  background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+  color: white;
+  position: relative;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.btn-link::after{
+  content: '';
+  position: absolute;
+  width: 102%;
+  height: 107%;
+  border-radius: 1000px;
+  background: var(--color-background);
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn-link:hover{
+  z-index: 1;
+  box-shadow: 40px 0 100px rgba(116,25,247,1), -40px 0 100px rgba(255,86,255,1);
+  transition: .3s;
+  background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+  color: white;
+}
+
+/* untuk bagian home */
+.section-title h2{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.section-title h2::after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  height: 3px;
+  width:80px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+
+.home{
+  background-image: url('Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-text{
+  position: relative;
+  z-index: 1;
+}
+
+.home-text h1{
+  font-family: 'Audiowide';
+  font-size: 70px;
+}
+
+
+.img{
+  position: absolute;
+  width: 400px;
+  left: 100px;
+  top: -60px;
+  z-index: -1;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+/* style about me */
+.about{
+  background: var(--color-background);
+}
+
+.skills-item .label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+
+.progress-bar{
+  border-radius: 0 5px 5px 0;
+}
+
+#progress-bar-html{
+    animation: html-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+
+@keyframes html-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+#progress-bar-css{
+    animation: css-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+@keyframes css-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+#progress-bar-js{
+    animation: js-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+@keyframes js-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+#progress-bar-php{
+    animation: php-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+@keyframes php-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+#progress-bar-mysql{
+    animation: mysql-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+@keyframes mysql-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+#progress-bar-bootstrap{
+    animation: bootstrap-fill 2s forwards;
+    background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+@keyframes bootstrap-fill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.skills-item{
+  color: white;
+}
+
+
+/* style speciality */
+
+
+.speciality-item{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(116,25,247,1); /* Bayangan lembut */
+}
+
+.speciality-item:hover {
+  box-shadow: 0 8px 16px rgba(255,86,255,1); /* Bayangan lebih intens saat hover */
+  transform: translateY(-5px); /* Efek naik sedikit saat dihover */
+}
+
+
+.speciality-item p{
+  color: #8f8f8f;
+}
+
+.icon i{
+  background: -webkit-linear-gradient(rgba(116,25,247,1), rgba(255,86,255,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* style contact */
+.contact-item .text h3{
+  color: white;
+}
+
+.contact-item .text p{
+  color: #bbbbbb;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer{
+  background: #15172D;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(116,25,247,1);
+  border: none;
+  border-radius: 0;
+}
+
+.message-important .container{
+  background-image: linear-gradient(90deg, rgba(116,25,247,1) 10%, rgba(255,86,255,1) 80%);
+}
+
+.message-important h1{
+  font-family: 'Archivo Black';
+  text-shadow: 3px 2px 1px #717171f0;
+}
+
+.btn-message{
+  background: white;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: .5s;
+  border: 2px solid transparent;
+}
+
+.btn-message:hover{
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+
+/* style Portfolio */
+.Portfolio{
+  background: var(--color-background);
+}
+
+.portfolio-item img{
+  transition: 1s ease;
+}
+
+.portfolio-item img:hover{
+  background: black;
+  box-shadow: 5px 5px rgba(116,25,247,1); 
+  -webkit-box-shadow: 5px 5px rgba(116,25,247,1);
+  -moz-box-shadow: 5px 5px 8px yellow;
+  transition: 1s ease;
+}
+
+.portfolio-item .btn-demo{
+  background: var(--color-background);
+  border: 2px solid var(--color-ungu);
+  color: white;
+  padding: 8px 25px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.portfolio-item .btn-demo:hover{
+  background: var(--color-ungu);
+  box-shadow: 0px 2px 10px rgba(116,25,247,1); 
+}
+
+/* style footer */
+.footer-logo-wrapper a{
+  font-family: 'Audiowide';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Style for larger screens */
+    .navbar-light .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* Desktop view */
+    @media (min-width: 992px) {
+      .navbar-brand {
+        color: white;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+      }
+      .navbar-toggler {
+        display: none;
+      }
+    }
+
+    /* Mobile and tablet view */
+    @media (max-width: 991px) {
+      .navbar-brand {
+        color: white;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+      }
+      .menu{
+        position: absolute;
+        top: 0;
+        right: -800px;
+        background: var(--color-background);
+        width: 350px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        transition: .5s;
+        display: flex;
+        opacity: 0;
+      }
+      .menu a{
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        transition: .5s;
+      }
+      
+      .menu a:hover{
+        color: var(--color-pink);
+      }
+      
+      .menu.buka{
+        background: var(--color-background);
+        right: 0;
+        opacity: 1;
+      }
+      #navbarOpen{
+        display: inline-block;
+      }
+    }
