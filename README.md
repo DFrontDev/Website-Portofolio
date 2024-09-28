@@ -16,7 +16,7 @@ Menggunakan framework Bootstrap
 
 # Cara Mengunjungi
 
-Akses website melalui tautan berikut: URL Website
+Akses website melalui tautan berikut: https://dfrontdev.github.io/Website-Portofolio/
 
 # Kontak
 
