@@ -585,5 +585,11 @@ body{
   .tombol .btn-explore i{
     font-size: 18px;
   }
+    .link-wrapper ul li a{
+    font-size: 10px;
+  }
+  .copyright-wrapper {
+    font-size: 12px;
+  }
 }
 
