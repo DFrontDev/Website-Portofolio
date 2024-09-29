@@ -488,6 +488,9 @@ body{
   .navbar-nav .nav-link {
     color: white;
   }
+  .tombol .hidden{
+    display: none;
+  }
   .menu{
     position: absolute;
     top: 0;
@@ -555,13 +558,16 @@ body{
     font-size: 18px;
   }
   .home-text h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
   .home-img img {
     width: 50%;
   }
   .about-text h3 {
     font-size: 18px;
+  }
+  .about-text p{
+    text-align: justify;
   }
   .speciality-item {
     padding: 8px;
@@ -571,6 +577,13 @@ body{
   }
   .skills-item .label h3 {
     font-size: 14px;
+  }
+  .tombol .btn-explore{
+    font-size: 12px;
+  }
+  
+  .tombol .btn-explore i{
+    font-size: 18px;
   }
 }
 
