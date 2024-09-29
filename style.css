@@ -39,8 +39,9 @@ body{
   font-family: 'Audiowide';
 }
 
-.nav-item{
+.nav-item a{
   margin-right: 15px;
+  color: white;
 }
 
 .nav-item a:hover{
